@@ -4,11 +4,25 @@
     box-sizing: border-box;
 }
 
-.blue{ color: blue;}
-.aqua{color: #00aff0}
-.red{color: red}
-.violet{color: violet}
-.pink{color: #d66d7d}
+.blue {
+    color: blue;
+}
+
+.aqua {
+    color: #00aff0
+}
+
+.red {
+    color: red
+}
+
+.violet {
+    color: violet
+}
+
+.pink {
+    color: #d66d7d
+}
 
 
 .container {
@@ -28,21 +42,24 @@
     margin: 0 8px;
 }
 
-.social-media-1 .box ul li a{
+.social-media-1 .box ul li a {
     display: inline-block;
     width: 50px;
     height: 50px;
     border-radius: 35%;
     background-color: #fff;
     filter: drop-shadow(0px 3px 0px rgba(0, 1, 1, 0.26));
-    position:relative;
+    position: relative;
+    transition: all .2s ease-in-out;
 }
+.social-media-1 .box ul li a:hover{transform: scale(1.2); filter: none;}
 
-.social-media-1 .box ul li a i{
+
+.social-media-1 .box ul li a i {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 25px;
 }
 
@@ -59,35 +76,49 @@
     margin: 0 8px;
 }
 
-.social-media-2 .box ul li a{
+.social-media-2 .box ul li a {
     display: inline-block;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: #fff;
     outline: none;
-    position:relative;
+    position: relative;
+    transition: all .2s ease-in-out;
 }
 
-.social-media-2 .box ul li a i{
+.social-media-2 .box ul li a i {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 25px;
-
 }
 
 
-.facebook-radius{
+
+.facebook-radius {
     border: 1px solid blue;
 }
 
-.twitter-radius,.linkedin-radius{
+.twitter-radius,
+.linkedin-radius {
     border: 1px solid #2784b4;
 }
-.google-radius{
+
+.google-radius {
     border: 1px solid red;
-}.instagram-radius{
+}
+
+.instagram-radius {
     border: 1px solid #e24f4d;
+}
+
+.facebook-radius:hover,
+.twitter-radius:hover,
+.linkedin-radius:hover,
+.google-radius:hover,
+.instagram-radius:hover {
+    border: none;
+    transform: scale(1.2);
 }
